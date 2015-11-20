@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Employee Form Example
+  </title>
+  <meta name="description" content="This is my description">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="scripts.js"></script>
+
+  <!-- Custom Styles -->
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2">
+        <form id="EmployeeInfo" role="form">
+          <fieldset>
+            <legend>Employee Information</legend>
+            <div class="form-group">
+              <label for="FirstName">First Name</label>
+              <input class="form-control" id="FirstName" name="firstName" type="text"></input>
+            </div>
+            <div class="form-group">
+              <label for="LastName">Last Name</label>
+              <input class="form-control" id="LastName" name="lastName" type="text"></input>
+            </div>
+            <div class="form-group">
+              <label for="EmployeeNumber">Employee Number</label>
+              <input class="form-control" id="EmployeeNumber" name="empNum" type="number" min="0"></input>
+            </div>
+            <div class="form-group">
+              <label for="Title">Title</label>
+              <input class="form-control" id="Title" name="title" type="text"></input>
+            </div>
+            <div class="form-group">
+              <label for="LastReviewScore">Last Review Score</label>
+              <input class="form-control" id="LastReviewScore" name="score" max="5" min="1" type="number"></input>
+            </div>
+            <div class="form-group">
+              <label for="Salary">Salary</label>
+              <input class="form-control" id="Salary" name="salary" type="number" min="0"></input>
+            </div>
+            <div class="form-group">
+              <input class="btn btn-primary" type="submit"></input>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <ul id="Employees" class="list-group"></ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.score1 {
+  background-color: red;
+}
+.score2 {
+  background-color: orange;
+}
+.score3 {
+  background-color: gold;
+}
+.score4 {
+  background-color: lightgreen;
+}
+.score5 {
+  background-color: green;
+}
+
+p {
+  margin: 10px;
+  display: inline;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.list-group-item > .badge {
+  margin-top: 8px;
+}
